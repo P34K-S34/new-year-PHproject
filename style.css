@@ -1,0 +1,165 @@
+/* Primary styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.common-p-style{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+}
+.common-h2-style{
+    font-weight: 600;
+    font-size: 30px;
+    font-style: Bold;
+    color: #151414;
+}
+
+/* Button Styles */
+.btn1{
+    padding: 15px 15px;    
+    color: #fff ;
+    background-color: #F15B22;
+    font-weight: 500;
+    font-size: 15px;
+
+    margin-top: 25px;
+    margin-bottom: 100px;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: transparent;
+    border: 1px solid #F15B22;
+    color: #F15B22;
+}
+.btn2{
+    padding: 15px 15px;
+    color: #F15B22;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+
+    border: 1px solid #F15B22;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #F15B22;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+
+/* Header & Nav styles */
+#header{
+    background: url(images/banner/banner1.png);
+    background-repeat: round;
+    background-size: 1110px ;
+    background-color: #E8E8E8;
+}
+
+
+#header .navbar ul{
+    list-style-type: none; 
+    display: flex;
+    justify-content: right;
+    margin-right: 100px;
+    padding-top: 40px;
+}
+#header .navbar li{
+    border-right: 2px solid #b4b4b4;
+
+    /* Note: I did my best to set the border correctly
+    bt it seems like, this element is not in a mood
+    so, please considere it as an Feature not an Bug :) */
+
+}
+#header .navbar li:last-child{
+    border-right: none;
+}
+
+#header .navbar li a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px 30px;
+    background-color: aliceblue;
+    transition: all 0.6s ease;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.377);
+}
+#header .navbar li a:hover{
+    background-color: #444343;
+    color: #fff;
+}
+
+
+/* Header banner styles */
+#header .header-banner{
+    text-align: right;
+    padding: 100px 100px 0 0;
+}
+#header .header-banner h1{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 56px;
+    color: #151414;
+    margin-bottom: 20px;
+}
+
+
+/* Main section styles */
+#main{
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 1080px;
+}
+#main .failures{
+    display: flex;
+    margin-bottom: 130px;
+}
+#main .failures .year-failures{
+    width: 400px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 220px;
+}
+#main .failures .year-failures h2{
+    margin-bottom: 24px;
+}
+#main .failures .checkbox{
+    margin-top: 16px;
+}
+#main .failures .checkbox span{
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+
+#main .my-plans{
+    margin-bottom: 130px;
+}
+#main .my-plans h2{
+    text-align: center;
+    margin-bottom: 55px;
+}
+#main .plan-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#main .my-plans h3{
+    font-style: Bold;
+    font-size: 25px;
+    color: #151414;
+}
+#main .my-plans p{
+    font-size: 20px;
+    color: #737272;
+}
